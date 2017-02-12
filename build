@@ -1,0 +1,3 @@
+/home/pet/Schreibtisch/cbmc-gc-v0.9.3/bin/cbmc-gc --function dowork LST2017.c
+cp output.* ./Server
+cp output.* ./Client

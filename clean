@@ -1,0 +1,9 @@
+rm output.*
+rm ./Client/output.*
+rm ./Client/server.*
+rm ./Client/client.*
+rm ./Client/NPOTKey
+rm ./Server/output.*
+rm ./Server/server.*
+rm ./Server/outputs.*
+rm ./Server/result.bits
