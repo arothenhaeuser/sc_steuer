@@ -6,6 +6,11 @@
  */
 
 #include "fixedpt.h"
+#include "MZTABFB.c"
+#include "MLSTJAHR.c"
+#include "UPLSTLZZ.c"
+#include "UPVKVLZZ.c"
+#include "MSOLZ.c"
 
 void MBERECH(fixedpt STKL, fixedpt ZKF, fixedpt KRV, fixedpt PKV, fixedpt PKPV,
 		fixedpt VMT, fixedpt VKAPA, fixedpt F, fixedpt LZZ, fixedpt ENTSCH, fixedpt R){

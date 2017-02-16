@@ -20,23 +20,28 @@ void UPTAB17 () {
 	if (X < GFB+intToFixedpt(1)) {
 		ST = 0;
 	} else {
-		if (X < intToFixedpt(13770)) {
+		if (X < 231022264320) {
 			Y = fixedpt_div((X-GFB), 10000);
 			RW = fixedpt_mul(Y, factor);
-			RW = RW + intToFixedpt(1400);
+			UPTAB17_TMP1 = intToFixedpt(1400);
+			RW = RW + UPTAB17_TMP1;
 			ST = fixedpt_mul(RW, Y);	//auf volle Euro aufrunden
 		} else {
-			if (X < intToFixedpt(54058)) {
-				Y = fixedpt_div(factor2, intToFixedpt(10000));
+			if (X < 906942742528) {
+				UPTAB17_TMP2 = intToFixedpt(10000);
+				Y = fixedpt_div(factor2, UPTAB17_TMP2);
 				RW = fixedpt_mul(Y, factor3);
-				RW = RW + intToFixedpt(2397);
+				UPTAB17_TMP3 = intToFixedpt(2397);
+				RW = RW + UPTAB17_TMP3;
 				RW = fixedpt_mul(RW, Y);
 				ST = RW + factor4;	//auf volle Euro aufrunden
 			} else {
-				if (X < intToFixedpt(256304)) {
-					ST = fixedpt_mul(X, factor5) - factor6;
+				if (X < 4300067569664) {
+					UPTAB17_TMP4 = fixedpt_mul(X, factor5);
+					ST = UPTAB17_TMP4 - factor6;
 				} else {
-					ST = fixedpt_mul(X, factor7) - factor8;
+					UPTAB17_TMP4 = fixedpt_mul(X, factor7);
+					ST = UPTAB17_TMP4 - factor8;
 				}
 			}
 		}

@@ -5,6 +5,7 @@
  *      Author: pet
  */
 
+#include "UPVKV.c"
 
 void UPVKVLZZ (fixedpt PKV, fixedpt LZZ) {
 

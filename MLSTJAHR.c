@@ -5,6 +5,9 @@
  *      Author: pet
  */
 
+#include "UPEVP.c"
+#include "UPMLST.c"
+
 void MLSTJAHR(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV, fixedpt VMT, fixedpt VKAPA){
 
 	UPEVP(KRV, STKL, PKV, PKPV);
@@ -13,7 +16,7 @@ void MLSTJAHR(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV, fixedpt VMT,
 		ZVE = ZRE4 - ZTABFB - VSP;
 		UPMLST(STKL);
 	} else {
-		ZVE = ZRE4 - ZTABFB - VSP - fixedpt_div(VMT, intToFixedpt(100)) - fixedpt(VKAPA, intToFixedpt(100));
+		ZVE = ZRE4 - ZTABFB - VSP - fixedpt_div(VMT, intToFixedpt(100)) - fixedpt_div(VKAPA, intToFixedpt(100));
 		if (ZVE < 0) {
 			fixedpt tmp = ZVE + fixedpt_div(VMT, intToFixedpt(100)) + fixedpt_div(VKAPA, intToFixedpt(100));
 			ZVE = fixedpt_div(tmp, intToFixedpt(5));

@@ -5,6 +5,8 @@
  *      Author: pet
  */
 
+#include "UPTAB17.c"
+#include "MST5_6.c"
 
 void UPMLST (fixedpt STKL) {
 

@@ -12,6 +12,8 @@
 #include "MPARA.c"
 #include "MRE4JL.c"
 #include "MRE4.c"
+#include "MRE4ABZ.c"
+#include "MBERECH.c"
 
 void dowork(
 			int INPUT_A_RE4,

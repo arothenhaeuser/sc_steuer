@@ -51,6 +51,8 @@ fixedpt MRE4_TMP2 = 0;
 fixedpt MRE4_TMP3 = 0;
 fixedpt MRE4_TMP4 = 0;
 
+fixedpt MVSP_TMP1 = 0;
+
 fixedpt PVSATZAG 	 = 0;
 fixedpt PVSATZAN 	 = 0;
 fixedpt PVSATZAN_TMP = 0;
@@ -69,6 +71,11 @@ fixedpt ST2		 = 0;
 fixedpt STOVMT	 = 0;
 
 fixedpt TBSVORV = 0;
+
+fixedpt UPTAB17_TMP1 = 0;
+fixedpt UPTAB17_TMP2 = 0;
+fixedpt UPTAB17_TMP3 = 0;
+fixedpt UPTAB17_TMP4 = 0;
 
 fixedpt VBEZB 	= 0;
 fixedpt VBEZB_VBEZBSO_TMP = 0;

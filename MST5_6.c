@@ -5,6 +5,7 @@
  *      Author: pet
  */
 
+#include "UP5_6.c"
 
 void MST5_6() {
 

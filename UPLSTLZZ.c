@@ -5,6 +5,7 @@
  *      Author: pet
  */
 
+#include "UPANTEIL.c"
 
 void UPLSTLZZ (fixedpt LZZ) {
 

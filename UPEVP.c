@@ -5,6 +5,8 @@
  *      Author: pet
  */
 
+#include "MVSP.c"
+
 void UPEVP(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV) {
 
 	fixedpt factor1 = fixedpt_div(intToFixedpt(12), intToFixedpt(100));
