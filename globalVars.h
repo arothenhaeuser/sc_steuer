@@ -45,6 +45,7 @@ fixedpt KZTAB	 = 0;
 
 fixedpt LSTJAHR	 = 0;
 fixedpt LSTLZZ	 = 0;
+fixedpt LSTSO	 = 0;
 
 fixedpt MRE4_TMP1 = 0;
 fixedpt MRE4_TMP2 = 0;
@@ -69,6 +70,7 @@ fixedpt ST		 = 0;
 fixedpt ST1		 = 0;
 fixedpt ST2		 = 0;
 fixedpt STOVMT	 = 0;
+fixedpt SVBEZJ	 = 0;
 
 fixedpt TBSVORV = 0;
 
@@ -99,6 +101,7 @@ fixedpt X		= 0;
 
 fixedpt Y		= 0;
 
+fixedpt ZMVB	= 0;
 fixedpt ZRE4 	= 0;
 fixedpt ZRE4J 	= 0;
 fixedpt ZRE4VP 	= 0;
