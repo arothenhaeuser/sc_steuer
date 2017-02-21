@@ -5,27 +5,26 @@
  *      Author: pet
  */
 
+void UP5_6() {
+	UP5_6_TMP = fixedpt_div(83886980, 67108864);
+	UP5_6_TMP2 = fixedpt_div(50331648, 67108864);
+	UP5_6_TMP3 = fixedpt_div(234881024, 1677721600);
 
-void UP5_6 () {
-	fixedpt factor = fixedpt_div(intToFixedpt(5), intToFixedpt(4));
-	fixedpt factor2 = fixedpt_div(intToFixedpt(3), intToFixedpt(4));
-	fixedpt factor3	= fixedpt_div(intToFixedpt(14), intToFixedpt(100));
+	UP5_6_MIST = 0;
+	UP5_6_DIFF = 0;
 
-	fixedpt MIST = 0;
-	fixedpt DIFF = 0;
-
-	X = fixedpt_mul(ZX, factor);
+	X = fixedpt_mul(ZX, UP5_6_TMP);
 	UPTAB17();
 	ST1 = ST;
-	X = fixedpt_mul(ZX, factor2);
+	X = fixedpt_mul(ZX, UP5_6_TMP2);
 	UPTAB17();
 	ST2 = ST;
-	DIFF = fixedpt_mul((ST1-ST2), intToFixedpt(2));
-	MIST = fixedpt_mul(ZX, factor3);
+	UP5_6_DIFF = fixedpt_mul((ST1 - ST2), 33554432);
+	UP5_6_MIST = fixedpt_mul(ZX, UP5_6_TMP3);
 
-	if (MIST > DIFF) {
-		ST = MIST;
+	if (UP5_6_MIST > UP5_6_DIFF) {
+		ST = UP5_6_MIST;
 	} else {
-		ST = DIFF;
+		ST = UP5_6_DIFF;
 	}
 }

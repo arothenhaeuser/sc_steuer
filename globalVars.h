@@ -76,6 +76,11 @@ fixedpt SVBEZJ	 = 0;
 
 fixedpt TBSVORV = 0;
 
+fixedpt UP5_6_DIFF	 = 0;
+fixedpt UP5_6_MIST	 = 0;
+fixedpt UP5_6_TMP	 = 0;
+fixedpt UP5_6_TMP2	 = 0;
+fixedpt UP5_6_TMP3	 = 0;
 fixedpt UPTAB17_TMP1 = 0;
 fixedpt UPTAB17_TMP2 = 0;
 fixedpt UPTAB17_TMP3 = 0;
