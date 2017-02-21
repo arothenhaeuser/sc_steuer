@@ -20,10 +20,15 @@ void MST5_6() {
 		ZX = W2STKL5;
 		UP5_6();
 		if (ZZX > W3STKL5) {
-			ST = ST + fixedpt_mul((W3STKL5-W2STKL5), factor);	//abrunden auf volle Euro
-			ST = ST + fixedpt_mul((ZZX-W3STKL5), factor2);		//abrunden auf volle Euro
+			MST5_6_TMP1 = ST;
+			ST = fixedpt_mul((W3STKL5-W2STKL5), factor);	//abrunden auf volle Euro
+			MST5_6_TMP1 = MST5_6_TMP1 + ST;
+			ST = fixedpt_mul((ZZX-W3STKL5), factor2);		//abrunden auf volle Euro
+			ST = ST + MST5_6_TMP1;
 		} else {
-			ST = ST + fixedpt_mul((ZZX - W2STKL5), factor);
+			MST5_6_TMP1 = ST;
+			ST = fixedpt_mul((ZZX - W2STKL5), factor);
+			ST = ST + MST5_6_TMP1;
 		}
 	} else {
 		ZX = ZZX;
@@ -32,7 +37,8 @@ void MST5_6() {
 			VERGL = ST;
 			ZX = W1STKL5;
 			UP5_6();
-			HOCH = ST + fixedpt_mul((ZZX-W1STKL5), factor);		//abrunden auf volle Euro
+			MST5_6_TMP1 = fixedpt_mul((ZZX-W1STKL5), factor);
+			HOCH = ST + MST5_6_TMP1;		//abrunden auf volle Euro
 
 			if (HOCH < VERGL) {
 				ST = HOCH;

@@ -45,13 +45,14 @@ fixedpt KZTAB	 = 0;
 
 fixedpt LSTJAHR	 = 0;
 fixedpt LSTLZZ	 = 0;
+fixedpt LSTOSO	 = 0;
 fixedpt LSTSO	 = 0;
 
 fixedpt MRE4_TMP1 = 0;
 fixedpt MRE4_TMP2 = 0;
 fixedpt MRE4_TMP3 = 0;
 fixedpt MRE4_TMP4 = 0;
-
+fixedpt MST5_6_TMP1 = 0;
 fixedpt MVSP_TMP1 = 0;
 
 fixedpt PVSATZAG 	 = 0;
@@ -69,6 +70,7 @@ fixedpt SOLZMIN	 = 0;
 fixedpt ST		 = 0;
 fixedpt ST1		 = 0;
 fixedpt ST2		 = 0;
+fixedpt STS		 = 0;
 fixedpt STOVMT	 = 0;
 fixedpt SVBEZJ	 = 0;
 
@@ -86,6 +88,7 @@ fixedpt	VFRB	= 0;
 fixedpt VHB		= 0;
 fixedpt VKV		= 0;
 fixedpt VKVLZZ	= 0;
+fixedpt VKVSONST = 0;
 fixedpt VSP		= 0;
 fixedpt	VSP1	= 0;
 fixedpt	VSP2	= 0;
@@ -96,6 +99,7 @@ fixedpt W1STKL5 = 0;
 fixedpt W2STKL5 = 0;
 fixedpt W3STKL5 = 0;
 fixedpt WVFRB	= 0;
+fixedpt WVFRBM 	= 0;
 
 fixedpt X		= 0;
 
