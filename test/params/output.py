@@ -1,0 +1,11 @@
+bk = None  #: Bemessungsgrundlage für die Kirchenlohnsteuer in Cent
+bks = None  #: Bemessungsgrundlage der sonstigen Bezüge (ohne Vergütung für mehrjährige Tätigkeit) für die Kirchenlohnsteuer in Cent
+bkv = None  #: Bemessungsgrundlage der Vergütung für mehrjährige Tätigkeit für die Kirchenlohnsteuer in Cent
+lstlzz = None  #: Für den Lohnzahlungszeitraum einzubehaltende Lohnsteuer in Cent
+solzlzz = None  #: Für den Lohnzahlungszeitraum einzubehaltender Solidaritätszuschlag in Cent
+solzs = None  #: Solidaritätszuschlag für sonstige Bezüge (ohne Vergütung für mehrjährige Tätigkeit) in Cent
+solzv = None  #: Solidaritätszuschlag für die Vergütung für mehrjährige Tätigkeit in Cent
+sts = None  #: Lohnsteuer für sonstige Bezüge (ohne Vergütung für mehrjährige Tätigkeit) in Cent
+stv = None  #: Lohnsteuer für die Vergütung für mehrjährige Tätigkeit in Cent
+vkvlzz = None  #: Für den Lohnzahlungszeitraum berücksichtigte Beiträge des Arbeitnehmers zur privaten Basis-Krankenversicherung und privaten Pflege-Pflichtversicherung (ggf. auch die Mindestvorsorgepauschale) in Cent beim laufenden Arbeitslohn. Für Zwecke der Lohnsteuerbescheinigung sind die einzelnen Ausgabewerte außerhalb des eigentlichen Lohnsteuerberechnungsprogramms zu addieren; hinzuzurechnen sind auch die Ausgabewerte VKVSONST.
+vkvsonst = None  #: Für den Lohnzahlungszeitraum berücksichtigte Beiträge des Arbeitnehmers zur privaten Basis-Krankenversicherung und privaten Pflege-Pflichtversicherung (ggf. auch die Mindestvorsorgepauschale) in Cent bei sonstigen Bezügen. Der Ausgabewert kann auch negativ sein. Für tarifermäßigt zu besteuernde Vergütungen für mehrjährige Tätigkeiten enthält der PAP keinen entsprechenden Ausgabewert.
