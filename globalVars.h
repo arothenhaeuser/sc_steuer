@@ -52,7 +52,11 @@ fixedpt MRE4_TMP1 = 0;
 fixedpt MRE4_TMP2 = 0;
 fixedpt MRE4_TMP3 = 0;
 fixedpt MRE4_TMP4 = 0;
+fixedpt MST5_6_FAC1 = 0;
+fixedpt MST5_6_FAC2 = 0;
+fixedpt MST5_6_HOCH = 0;
 fixedpt MST5_6_TMP1 = 0;
+fixedpt MST5_6_VERGL = 0;
 fixedpt MVSP_TMP1 = 0;
 
 fixedpt PVSATZAG 	 = 0;
@@ -85,6 +89,14 @@ fixedpt UPTAB17_TMP1 = 0;
 fixedpt UPTAB17_TMP2 = 0;
 fixedpt UPTAB17_TMP3 = 0;
 fixedpt UPTAB17_TMP4 = 0;
+fixedpt UPTAB17_FAC1 = 0;
+fixedpt UPTAB17_FAC2 = 0;
+fixedpt UPTAB17_FAC3 = 0;
+fixedpt UPTAB17_FAC4 = 0;
+fixedpt UPTAB17_FAC5 = 0;
+fixedpt UPTAB17_FAC6 = 0;
+fixedpt UPTAB17_FAC7 = 0;
+fixedpt UPTAB17_FAC8 = 0;
 
 fixedpt VBEZB 	= 0;
 fixedpt VBEZB_VBEZBSO_TMP = 0;
