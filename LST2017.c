@@ -41,7 +41,7 @@ void dowork(int INPUT_A_RE4, int INPUT_A_VBEZ, int INPUT_A_LZZFREIB,
 		int INPUT_B_VBEZS,		//
 		int INPUT_B_SONSTB,		//MSONST
 		int INPUT_A_JRE4,		//MSONST
-		int INTPUT_A_JVBEZ,		//MSONST
+		int INPUT_A_JVBEZ,		//MSONST
 		int INPUT_B_VBS,		//MSONST
 		int INPUT_B_STERBE,		//MSONST
 		int INPUT_B_F,			//MSONST
@@ -71,7 +71,7 @@ void dowork(int INPUT_A_RE4, int INPUT_A_VBEZ, int INPUT_A_LZZFREIB,
 			intToFixedpt(INPUT_A_R));
 	MSONST(intToFixedpt(INPUT_A_LZZ), intToFixedpt(INPUT_B_ZMVB),
 			intToFixedpt(INPUT_B_SONSTB), intToFixedpt(INPUT_A_JRE4),
-			intToFixedpt(INTPUT_A_JVBEZ), intToFixedpt(INPUT_B_VBS),
+			intToFixedpt(INPUT_A_JVBEZ), intToFixedpt(INPUT_B_VBS),
 			intToFixedpt(INPUT_B_STERBE), intToFixedpt(INPUT_B_F),
 			intToFixedpt(INPUT_B_R), intToFixedpt(INPUT_B_PKV),
 			intToFixedpt(INPUT_B_KRV), intToFixedpt(INPUT_B_STKL),

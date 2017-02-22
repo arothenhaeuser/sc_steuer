@@ -15,11 +15,11 @@ void MSONST(fixedpt LZZ, fixedpt ZMVB, fixedpt SONSTB, fixedpt JRE4,
 		ZMVB = 12;
 	}
 	if (SONSTB == 0) {
-		fixedpt OUTPUT_VKVSONST = 0;
+		fixedpt OUTPUT_VKVSONST = intToFixedpt(0);
 		LSTSO = 0;
-		fixedpt OUTPUT_STS = 0;
-		fixedpt OUTPUT_SOLZS = 0;
-		fixedpt OUTPUT_BKS = 0;
+		fixedpt OUTPUT_STS = intToFixedpt(0);
+		fixedpt OUTPUT_SOLZS = intToFixedpt(0);
+		fixedpt OUTPUT_BKS = intToFixedpt(0);
 	} else {
 		MOSONST();
 		UPVKV(PKV);
@@ -51,7 +51,7 @@ void MSONST(fixedpt LZZ, fixedpt ZMVB, fixedpt SONSTB, fixedpt JRE4,
 		if (R > 0) {
 			fixedpt OUTPUT_BKS = STS;
 		} else {
-			fixedpt OUTPUT_BKS = 0;
+			fixedpt OUTPUT_BKS = intToFixedpt(0);
 		}
 	}
 }

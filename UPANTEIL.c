@@ -8,7 +8,7 @@
 
 void UPANTEIL (fixedpt LZZ) {
 
-	fixedpt factor = fixedpt_div(7, 360);
+	UPANTEIL_TMP1 = fixedpt_div(7, 360);
 
 	switch(LZZ) {
 	case 1:
@@ -18,7 +18,7 @@ void UPANTEIL (fixedpt LZZ) {
 		ANTEIL1 = fixedpt_div(JW, 201326592);
 		break;
 	case 3:
-		ANTEIL1 = fixedpt_mul(JW, factor);
+		ANTEIL1 = fixedpt_mul(JW, UPANTEIL_TMP1);
 		break;
 	default:
 		ANTEIL1 = fixedpt_mul(JW, 6039797760);

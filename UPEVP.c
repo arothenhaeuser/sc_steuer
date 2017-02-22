@@ -9,7 +9,7 @@
 
 void UPEVP(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV) {
 
-	fixedpt factor1 = fixedpt_div(intToFixedpt(12), intToFixedpt(100));
+	UPEVP_TMP1 = fixedpt_div(201326592, 1677721600);
 
 	if (KRV > 1) {
 		VSP1 = 0;
@@ -22,7 +22,7 @@ void UPEVP(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV) {
 		VSP1 = fixedpt_mul(VSP1, RVSATZAN);
 	}
 
-	VSP2 = fixedpt_mul(factor1, ZRE4VP);
+	VSP2 = fixedpt_mul(UPEVP_TMP1, ZRE4VP);
 
 	if (STKL == 3) {
 		VHB = intToFixedpt(3000);
