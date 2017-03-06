@@ -17,6 +17,7 @@ fixedpt ANTEIL1 = 0;
 fixedpt BBGKVPV = 0;
 fixedpt BBGRV 	= 0;
 fixedpt BK		= 0;
+fixedpt BKS		= 0;
 
 fixedpt EFA		= 0;
 
@@ -31,10 +32,14 @@ fixedpt HFVB 	= 0;
 fixedpt HFVBZ 	= 0;
 fixedpt HFVBZSO = 0;
 
+fixedpt JBMG	= 0;
+fixedpt JFREIB	= 0;
+fixedpt JHINZU	= 0;
 fixedpt JLFREIB = 0;
 fixedpt JLHINZU = 0;
-
-fixedpt JBMG	= 0;
+fixedpt JRE4	= 0;
+fixedpt JRE4ENT	= 0;
+fixedpt JVBEZ	= 0;
 fixedpt JW		= 0;
 
 fixedpt KENNVMT  = 0;
@@ -53,9 +58,6 @@ fixedpt MRE4_TMP2 = 0;
 fixedpt MRE4_TMP3 = 0;
 fixedpt MRE4_TMP4 = 0;
 fixedpt MSONST_TMP1 = 0;
-fixedpt MSONST_TMP2 = 0;
-fixedpt MOSONST_TMP3 = 0;
-fixedpt MSONST_TMP4 = 0;
 fixedpt MST5_6_FAC1 = 0;
 fixedpt MST5_6_FAC2 = 0;
 fixedpt MST5_6_HOCH = 0;
@@ -78,6 +80,7 @@ fixedpt SOLZFREI = 0;
 fixedpt SOLZJ	 = 0;
 fixedpt SOLZLZZ	 = 0;
 fixedpt SOLZMIN	 = 0;
+fixedpt SOLZS	 = 0;
 fixedpt ST		 = 0;
 fixedpt ST1		 = 0;
 fixedpt ST2		 = 0;
@@ -111,6 +114,7 @@ fixedpt VBEZB 	= 0;
 fixedpt VBEZB_VBEZBSO_TMP = 0;
 fixedpt VBEZBSO = 0;
 fixedpt	VFRB	= 0;
+fixedpt VFRS1	= 0;
 fixedpt VHB		= 0;
 fixedpt VKV		= 0;
 fixedpt VKVLZZ	= 0;
@@ -126,6 +130,7 @@ fixedpt W2STKL5 = 0;
 fixedpt W3STKL5 = 0;
 fixedpt WVFRB	= 0;
 fixedpt WVFRBM 	= 0;
+fixedpt WVFRBO	= 0;
 
 fixedpt X		= 0;
 

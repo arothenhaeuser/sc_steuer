@@ -15,13 +15,12 @@ void MSONST(fixedpt LZZ, fixedpt ZMVB, fixedpt SONSTB, fixedpt JRE4,
 	if (ZMVB == 0) {
 		ZMVB = 12;
 	}
-	MSONST_TMP2 = 0;
 	if (SONSTB == 0) {
-		//fixedpt OUTPUT_VKVSONST = MSONST_TMP2; //intToFixedpt(0);
+		VKVSONST = 0;
 		LSTSO = 0;
-		//fixedpt OUTPUT_STS = MSONST_TMP2; //intToFixedpt(0);
-		//fixedpt OUTPUT_SOLZS = MSONST_TMP2; //intToFixedpt(0);
-		//fixedpt OUTPUT_BKS = MSONST_TMP2; //intToFixedpt(0);
+		STS = 0;
+		SOLZS = 0;
+		BKS = 0;
 	} else {
 		MOSONST();
 		UPVKV(PKV);
@@ -38,24 +37,25 @@ void MSONST(fixedpt LZZ, fixedpt ZMVB, fixedpt SONSTB, fixedpt JRE4,
 		if (WVFRBM < 0) {
 			WVFRBM = 0;
 		}
-		fixedpt OUTPUT_WVFRBM = WVFRBM;
 		UPVKV(PKV);
 		VKVSONST = VKV - VKVSONST;
-		fixedpt OUTPUT_VKVSONST = VKVSONST;
 		LSTSO = fixedpt_mul(ST, 1677721600);
 		STS = LSTSO - LSTOSO;
 		STS = fixedpt_mul(STS, F);
 		if (STS < 0) {
 			STS = 0;
 		}
-		fixedpt OUTPUT_STS = STS;
 		MSONST_TMP1 = fixedpt_div(55, 100);
-		MSONST_TMP4 = STS * MSONST_TMP1;
-		fixedpt OUTPUT_SOLZS = MSONST_TMP4;
+		SOLZS = STS * MSONST_TMP1;
 		if (R > 0) {
-			fixedpt OUTPUT_BKS = 1;//STS;
+			BKS = STS;
 		} else {
-			fixedpt OUTPUT_BKS = 0;
+			BKS = 0;
 		}
 	}
+	fixedpt OUTPUT_VKVSONST = VKVSONST;
+	fixedpt OUTPUT_STS = STS;
+	fixedpt OUTPUT_SOLZS = SOLZS;
+	fixedpt OUTPUT_BKS = BKS;
+	fixedpt OUTPUT_WVFRBM = WVFRBM;
 }

@@ -1,0 +1,4 @@
+0. Add missing code.
+1. Check if every single calculation result is stored in a globalVar.
+2. Output only "Output Parameters" at the end.
+This is not good design, but straight forward and the only way it works.
