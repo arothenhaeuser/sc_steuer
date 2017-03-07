@@ -6,32 +6,13 @@
  */
 
 #include "fixedpt.h"
+#include "MRE4ALTE.h"
 
-fixedpt calcZVBEZJ(fixedpt VBEZ, fixedpt LZZ) {
-	fixedpt ret = 0;
-	switch (LZZ) {
-	case 33554432:
-		ret = fixedpt_mul(VBEZ, 201326592);
-		break;
-	case 50331648:
-		ret = fixedpt_mul(VBEZ, 872415232);
-		break;
-	case 67108864:
-		ret = fixedpt_mul(VBEZ, 6123683840);
-		break;
-	default:
-		break;
-	}
-	return ret;
-}
-
-void MRE4(fixedpt VJAHR, fixedpt VBEZ, fixedpt LZZ, fixedpt VBEZM, fixedpt ZMVB, fixedpt VBEZS) {
+void MRE4(fixedpt VJAHR, fixedpt VBEZ, fixedpt LZZ, fixedpt VBEZM, fixedpt ZMVB, fixedpt VBEZS, fixedpt ALTER1, fixedpt AJAHR) {
 	MRE4_TMP1 = intToFixedpt(TAB2[J -1]);
 	MRE4_TMP2 = fixedpt_div(MRE4_TMP1, 201326592);
 	MRE4_TMP3 = fixedpt_div(VBEZB, 1677721600);
 	MRE4_TMP4 = fixedpt_div(VBEZBSO, 1677721600);
-
-	ZVBEZJ = calcZVBEZJ(VBEZ, LZZ);
 
 	if (ZVBEZJ == 0) {
 		FVBZ = 0;
@@ -85,5 +66,5 @@ void MRE4(fixedpt VJAHR, fixedpt VBEZ, fixedpt LZZ, fixedpt VBEZM, fixedpt ZMVB,
 		FVBZ = HFVBZ; //Auf volle Euro aufrunden
 	}
 	}
-	MRE4ALTE();
+	MRE4ALTE(ALTER1, AJAHR);
 }

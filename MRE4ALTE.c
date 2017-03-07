@@ -10,7 +10,7 @@
 #include "fixedpt.h"
 #include "tables.h"
 
-void MRE4ALTE(fixedpt ALTER1, fixedpt AJAHR, ) {
+void MRE4ALTE(fixedpt ALTER1, fixedpt AJAHR) {
 	if(ALTER1 == 0) {
 		ALTE = 0;
 	} else {
@@ -24,8 +24,8 @@ void MRE4ALTE(fixedpt ALTER1, fixedpt AJAHR, ) {
 			}
 		}
 		BMG = ZRE4J -ZVBEZJ;
-		ALTE = fixedpt_mul(BMG, TAB4(K));
-		HBALTE = TAB5(K);
+		ALTE = fixedpt_mul(BMG, TAB4[K]);
+		HBALTE = TAB5[K];
 		if(ALTE > HBALTE){
 			ALTE = HBALTE;
 		}
