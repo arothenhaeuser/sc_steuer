@@ -18,8 +18,8 @@ void MLSTJAHR(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV, fixedpt VMT,
 	} else {
 		ZVE = ZRE4 - ZTABFB - VSP - fixedpt_div(VMT, intToFixedpt(100)) - fixedpt_div(VKAPA, intToFixedpt(100));
 		if (ZVE < 0) {
-			fixedpt tmp = ZVE + fixedpt_div(VMT, intToFixedpt(100)) + fixedpt_div(VKAPA, intToFixedpt(100));
-			ZVE = fixedpt_div(tmp, intToFixedpt(5));
+			MLSTJAHR_TMP1 = ZVE + fixedpt_div(VMT, intToFixedpt(100)) + fixedpt_div(VKAPA, intToFixedpt(100));
+			ZVE = fixedpt_div(MLSTJAHR_TMP1, intToFixedpt(5));
 			UPMLST(STKL);
 			ST = fixedpt_mul(ST, intToFixedpt(5));
 		} else {

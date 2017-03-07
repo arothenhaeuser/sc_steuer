@@ -85,5 +85,5 @@ void MRE4(fixedpt VJAHR, fixedpt VBEZ, fixedpt LZZ, fixedpt VBEZM, fixedpt ZMVB,
 		FVBZ = HFVBZ; //Auf volle Euro aufrunden
 	}
 	}
-	//MRE4ALTE();
+	MRE4ALTE();
 }
