@@ -17,7 +17,8 @@ void MRE4ABZ(fixedpt ENTSCH){
 		ZRE4VP = ZRE4J;
 	}
 	if (KENNVMT == 33554432) {
-		ZRE4VP = ZRE4VP - fixedpt_div(ENTSCH, 1677721600);
+		MRE4ABZ_TMP1 = fixedpt_div(ENTSCH, 1677721600);
+		ZRE4VP = ZRE4VP - MRE4ABZ_TMP1;
 	}
 	ZVBEZ = ZVBEZJ - FVB;
 	if (ZVBEZ < 0) {

@@ -68,6 +68,7 @@ fixedpt MRE4_TMP1 = 0;
 fixedpt MRE4_TMP2 = 0;
 fixedpt MRE4_TMP3 = 0;
 fixedpt MRE4_TMP4 = 0;
+fixedpt MRE4ABZ_TMP1	 = 0;
 fixedpt MRE4SONST_TMP1	 = 0;
 fixedpt MRE4SONST_TMP2	 = 0;
 fixedpt MRE4SONST_TMP3	 = 0;
