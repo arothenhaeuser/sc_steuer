@@ -204,17 +204,6 @@ class TestMre4(unittest.TestCase):
         self.assertEqual(intern.fvbso, 0)
 
 
-class TestMre4abz(unittest.TestCase):
-    def setUp(self):
-        resetParams()
-        setDefaultParams()
-
-    def test_tt1(self):
-        setTestTable1()
-
-
-
-
 class TestTesttable1(unittest.TestCase):
 
     def setUp(self):
@@ -222,31 +211,31 @@ class TestTesttable1(unittest.TestCase):
         setDefaultParams(krv=0, pkv=0, kvz=1.1)
 
     def test_stkl1(self):
-        setRe4Stkl(25000, 1)
+        setRe4Stkl(2500000, 1)
         m.lst2017()
-        self.assertEqual(output.lstlzz, 2511)
+        self.assertAlmostEqual(output.lstlzz, 251100, delta=200)
 
     def test_stkl2(self):
-        setRe4Stkl(25000, 2)
+        setRe4Stkl(2500000, 2)
         m.lst2017()
-        self.assertEqual(output.lstlzz, 2025)
+        self.assertAlmostEqual(output.lstlzz, 202500, delta=200)
 
     def test_stkl3(self):
-        setRe4Stkl(25000, 3)
+        setRe4Stkl(2500000, 3)
         m.lst2017()
-        self.assertEqual(output.lstlzz, 256)
+        self.assertAlmostEqual(output.lstlzz, 25600, delta=200)
 
     def test_stkl4(self):
-        setRe4Stkl(25000, 4)
+        setRe4Stkl(2500000, 4)
         m.lst2017()
-        self.assertEqual(output.lstlzz, 2511)
+        self.assertAlmostEqual(output.lstlzz, 251100, delta=200)
 
     def test_stkl5(self):
-        setRe4Stkl(25000, 5)
+        setRe4Stkl(2500000, 5)
         m.lst2017()
-        self.assertEqual(output.lstlzz, 5340)
+        self.assertAlmostEqual(output.lstlzz, 534000, delta=200)
 
     def test_stkl6(self):
-        setRe4Stkl(25000, 6)
+        setRe4Stkl(2500000, 6)
         m.lst2017()
-        self.assertEqual(output.lstlzz, 5716)
+        self.assertAlmostEqual(output.lstlzz, 571600, delta=200)
