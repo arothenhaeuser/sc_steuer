@@ -28,6 +28,7 @@ def getInputs():
     for var in dir(inpt):
         if not var.startswith("__"):
             inputs[var] = 0
+    # change inputs here #
     inputs["lzz"] = 1
     inputs["kvz"] = 1
     inputs["pvz"] = 1
