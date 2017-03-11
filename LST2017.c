@@ -97,21 +97,22 @@ void dowork(int INPUT_A_RE4, int INPUT_B_VBEZ, int INPUT_A_LZZFREIB,
 			intToFixedpt(INPUT_A_STKL), intToFixedpt(INPUT_A_ZKF), intToFixedpt(INPUT_A_KRV),
 			intToFixedpt(INPUT_A_PKV), intToFixedpt(INPUT_A_PKPV));
 
-	fixedpt OUTPUT_BK = BK;
-	fixedpt OUTPUT_BKS = BKS;
-	fixedpt OUTPUT_BKV = BKV;
-	fixedpt OUTPUT_LSTLZZ = LSTLZZ;
-	fixedpt OUTPUT_SOLZLZZ = SOLZLZZ;
-	fixedpt OUTPUT_SOLZS = SOLZS;
-	fixedpt OUTPUT_SOLZV = SOLZV;
-	fixedpt OUTPUT_STS = STS;
-	fixedpt OUTPUT_STV = STV;
-	fixedpt OUTPUT_VKVLZZ = VKVLZZ;
-	fixedpt OUTPUT_VKVSONST = VKVSONST;
+	int OUTPUT_BK = fixedptToInt(BK);
+	int OUTPUT_BKS = fixedptToInt(BKS);
+	int OUTPUT_BKV = fixedptToInt(BKV);
+	int OUTPUT_LSTLZZ = fixedptToInt(LSTLZZ);
+	int OUTPUT_SOLZLZZ = fixedptToInt(SOLZLZZ);
+	int OUTPUT_SOLZS = fixedptToInt(SOLZS);
+	int OUTPUT_SOLZV = fixedptToInt(SOLZV);
+	int OUTPUT_STS = fixedptToInt(STS);
+	int OUTPUT_STV = fixedptToInt(STV);
+	int OUTPUT_VKVLZZ = fixedptToInt(VKVLZZ);
+	int OUTPUT_VKVSONST = fixedptToInt(VKVSONST);
 
-	fixedpt OUTPUT_VFRB = VFRB;
-	fixedpt OUTPUT_VFRBS2 = VFRBS2;
-	fixedpt OUTPUT_WVFRB = WVFRB;
-	fixedpt OUTPUT_WVFRBM = WVFRBM;
-	fixedpt OUTPUT_WVFRBO = WVFRBO;
+	int OUTPUT_VFRB = fixedptToInt(VFRB);
+	int OUTPUT_VFRBS2 = fixedptToInt(VFRBS2);
+	int OUTPUT_WVFRB = fixedptToInt(WVFRB);
+	int OUTPUT_WVFRBM = fixedptToInt(WVFRBM);
+	int OUTPUT_WVFRBO = fixedptToInt(WVFRBO);
+	int OUTPUT_DEBUG = 10;
 }

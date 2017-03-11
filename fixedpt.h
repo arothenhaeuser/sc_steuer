@@ -27,4 +27,8 @@ fixedpt fixedpt_div(fixedpt a, fixedpt b) {
 	return ((fixedpt) a << FIXEDPOINT_FRACTION_BITS) / b;
 }
 
+int fixedptToInt(fixedpt a) {
+    return (unsigned)a >> FIXEDPOINT_FRACTION_BITS;
+}
+
 #endif /* FIXEDPT_H_ */
