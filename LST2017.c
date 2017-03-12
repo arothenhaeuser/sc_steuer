@@ -31,27 +31,17 @@ void dowork(int INPUT_A_RE4, int INPUT_B_VBEZ, int INPUT_A_LZZFREIB,
 		int INPUT_B_VMT,		//MBERECH
 		int INPUT_B_VKAPA,		//MBERECH
 		int INPUT_B_LZZ,		//MBERECH
-		int INPUT_B_KRV,		//
 		int INPUT_B_KVZ,		//
 		int INPUT_B_PVS,		//
 		int INPUT_B_PVZ,		//
-		int INPUT_A_LZZ,		//
 		int INPUT_B_AF,		//
-		int INPUT_B_F,		//
 		int INPUT_B_VJAHR,		//
 		int INPUT_B_VBEZM,		//
 		int INPUT_B_ZMVB,		//
 		int INPUT_B_VBEZS,		//
 		int INPUT_B_SONSTB,		//MSONST
-		int INPUT_A_JRE4,		//MSONST
-		int INPUT_A_JVBEZ,		//MSONST
 		int INPUT_B_VBS,		//MSONST
 		int INPUT_B_STERBE,		//MSONST
-		int INPUT_B_F,			//MSONST
-		int INPUT_B_R,			//MSONST
-		int INPUT_B_PKV,		//MSONST
-		int INPUT_B_STKL,		//MSONST
-		int INPUT_B_PKPV,		//MSONST
 		int INPUT_A_ALTER1, int INPUT_A_AJAHR, int INPUT_B_SONSTENT,
 		int INPUT_B_JRE4ENT) {
 
@@ -70,27 +60,18 @@ void dowork(int INPUT_A_RE4, int INPUT_B_VBEZ, int INPUT_A_LZZFREIB,
     VMT = intToFixedpt(INPUT_B_VMT);
     VKAPA = intToFixedpt(INPUT_B_VKAPA);
     LZZ = intToFixedpt(INPUT_B_LZZ);
-    KRV = intToFixedpt(INPUT_B_KRV);
     KVZ = intToFixedpt(INPUT_B_KVZ);
     PVS = intToFixedpt(INPUT_B_PVS);
     PVZ = intToFixedpt(INPUT_B_PVZ);
-    LZZ = intToFixedpt(INPUT_A_LZZ);
     AF = intToFixedpt(INPUT_B_AF);
-    F = intToFixedpt(INPUT_B_F);
     VJAHR = intToFixedpt(INPUT_B_VJAHR);
     VBEZM = intToFixedpt(INPUT_B_VBEZM);
     ZMVB = intToFixedpt(INPUT_B_ZMVB);
     VBEZS = intToFixedpt(INPUT_B_VBEZS);
     SONSTB = intToFixedpt(INPUT_B_SONSTB);
-    JRE4 = intToFixedpt(INPUT_A_JRE4);
-    JVBEZ = intToFixedpt(INPUT_A_JVBEZ);
     VBS = intToFixedpt(INPUT_B_VBS);
     STERBE = intToFixedpt(INPUT_B_STERBE);
     F = intToFixedpt(INPUT_B_F);
-    R = intToFixedpt(INPUT_B_R);
-    PKV = intToFixedpt(INPUT_B_PKV);
-    STKL = intToFixedpt(INPUT_B_STKL);
-    PKPV = intToFixedpt(INPUT_B_PKPV);
     ALTER1 = intToFixedpt(INPUT_A_ALTER1);
     AJAHR = intToFixedpt(INPUT_A_AJAHR);
     SONSTENT = intToFixedpt(INPUT_B_SONSTENT);
