@@ -17,11 +17,11 @@ void MBERECH(fixedpt STKL, fixedpt ZKF, fixedpt KRV, fixedpt PKV, fixedpt PKPV,
 
 	MZTABFB(STKL, ZKF);
 
-	VFRB = fixedpt_mul((ANP + FVB + FVBZ), intToFixedpt(100));
+	VFRB = fixedpt_mul((ANP + FVB + FVBZ), 1677721600);
 
 	MLSTJAHR(KRV, STKL, PKV, PKPV, VMT, VKAPA);
 
-	WVFRB = fixedpt_mul((ZVE-GFB), intToFixedpt(100));
+	WVFRB = fixedpt_mul((ZVE-GFB), 1677721600);
 
 	if (WVFRB < 0) {
 		WVFRB = 0;

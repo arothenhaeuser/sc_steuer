@@ -13,9 +13,9 @@ void MSONST(fixedpt LZZ, fixedpt ZMVB, fixedpt SONSTB, fixedpt JRE4,
 		fixedpt JVBEZ, fixedpt VBS, fixedpt STERBE, fixedpt F, fixedpt R,
 		fixedpt PKV, fixedpt KRV, fixedpt STKL, fixedpt PKPV, fixedpt VMT,
 		fixedpt VKAPA, fixedpt VJAHR, fixedpt VBEZ, fixedpt VBEZM, fixedpt VBEZS, fixedpt ALTER1, fixedpt AJAHR, fixedpt ENTSCH, fixedpt ZKF, fixedpt SONSTENT, fixedpt JRE4ENT) {
-	LZZ = 1;
+	LZZ = 16777216;
 	if (ZMVB == 0) {
-		ZMVB = 12;
+		ZMVB = 201326592;
 	}
 	if (SONSTB == 0) {
 		VKVSONST = 0;

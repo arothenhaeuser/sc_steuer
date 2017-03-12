@@ -9,7 +9,7 @@
 
 void UPLSTLZZ (fixedpt LZZ) {
 
-	JW = fixedpt_mul(LSTJAHR, intToFixedpt(100));
+	JW = fixedpt_mul(LSTJAHR, 1677721600);
 	UPANTEIL(LZZ);
 	LSTLZZ = ANTEIL1;
 }

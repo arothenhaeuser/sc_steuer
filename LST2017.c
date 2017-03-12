@@ -114,5 +114,4 @@ void dowork(int INPUT_A_RE4, int INPUT_B_VBEZ, int INPUT_A_LZZFREIB,
 	int OUTPUT_WVFRB = fixedptToInt(WVFRB);
 	int OUTPUT_WVFRBM = fixedptToInt(WVFRBM);
 	int OUTPUT_WVFRBO = fixedptToInt(WVFRBO);
-	int OUTPUT_DEBUG = 10;
 }

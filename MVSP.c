@@ -17,11 +17,11 @@ void MVSP (fixedpt PKV, fixedpt PKPV, fixedpt STKL) {
 	}
 
 	if (PKV > 0) {
-		if (STKL == 6) {
+		if (STKL == 100663296) {
 			VSP3 = 0;
 		} else {
 			VSP3 = fixedpt_mul(PKPV, MVSP_TMP2);
-			if (PKV == 2) {
+			if (PKV == 33554432) {
 				MVSP_TMP1 = fixedpt_mul(ZRE4VP, MVSP_TMP3);
 				VSP3 = VSP3 - MVSP_TMP1;
 			}
