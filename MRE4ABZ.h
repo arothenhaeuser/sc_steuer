@@ -8,6 +8,6 @@
 #ifndef MRE4ABZ_H_
 #define MRE4ABZ_H_
 
-void MRE4ABZ(fixedpt ENTSCH);
+void MRE4ABZ();
 
 #endif /* MRE4ABZ_H_ */
