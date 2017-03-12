@@ -54,48 +54,61 @@ void dowork(int INPUT_A_RE4, int INPUT_B_VBEZ, int INPUT_A_LZZFREIB,
 		int INPUT_B_PKPV,		//MSONST
 		int INPUT_A_ALTER1, int INPUT_A_AJAHR, int INPUT_B_SONSTENT,
 		int INPUT_B_JRE4ENT) {
+
+    RE4 = intToFixedpt(INPUT_A_RE4);
+    VBEZ = intToFixedpt(INPUT_B_VBEZ);
+    LZZFREIB = intToFixedpt(INPUT_A_LZZFREIB);
+    LZZHINZU = intToFixedpt(INPUT_A_LZZHINZU);
+    ENTSCH = intToFixedpt(INPUT_A_ENTSCH);
+    STKL = intToFixedpt(INPUT_A_STKL);
+    ZKF = intToFixedpt(INPUT_A_ZKF);
+    KRV = intToFixedpt(INPUT_A_KRV);
+    PKV = intToFixedpt(INPUT_A_PKV);
+    PKPV = intToFixedpt(INPUT_A_PKPV);
+    F = intToFixedpt(INPUT_A_F);
+    R = intToFixedpt(INPUT_A_R);
+    VMT = intToFixedpt(INPUT_B_VMT);
+    VKAPA = intToFixedpt(INPUT_B_VKAPA);
+    LZZ = intToFixedpt(INPUT_B_LZZ);
+    KRV = intToFixedpt(INPUT_B_KRV);
+    KVZ = intToFixedpt(INPUT_B_KVZ);
+    PVS = intToFixedpt(INPUT_B_PVS);
+    PVZ = intToFixedpt(INPUT_B_PVZ);
+    LZZ = intToFixedpt(INPUT_A_LZZ);
+    AF = intToFixedpt(INPUT_B_AF);
+    F = intToFixedpt(INPUT_B_F);
+    VJAHR = intToFixedpt(INPUT_B_VJAHR);
+    VBEZM = intToFixedpt(INPUT_B_VBEZM);
+    ZMVB = intToFixedpt(INPUT_B_ZMVB);
+    VBEZS = intToFixedpt(INPUT_B_VBEZS);
+    SONSTB = intToFixedpt(INPUT_B_SONSTB);
+    JRE4 = intToFixedpt(INPUT_A_JRE4);
+    JVBEZ = intToFixedpt(INPUT_A_JVBEZ);
+    VBS = intToFixedpt(INPUT_B_VBS);
+    STERBE = intToFixedpt(INPUT_B_STERBE);
+    F = intToFixedpt(INPUT_B_F);
+    R = intToFixedpt(INPUT_B_R);
+    PKV = intToFixedpt(INPUT_B_PKV);
+    STKL = intToFixedpt(INPUT_B_STKL);
+    PKPV = intToFixedpt(INPUT_B_PKPV);
+    ALTER1 = intToFixedpt(INPUT_A_ALTER1);
+    AJAHR = intToFixedpt(INPUT_A_AJAHR);
+    SONSTENT = intToFixedpt(INPUT_B_SONSTENT);
+    JRE4ENT = intToFixedpt(INPUT_B_JRE4ENT);
+
+
 	initTables();
-	MPARA(intToFixedpt(INPUT_B_KRV), intToFixedpt(INPUT_B_KVZ),
-			intToFixedpt(INPUT_B_PVS), intToFixedpt(INPUT_B_PVZ));
-	MRE4JL(intToFixedpt(INPUT_A_LZZ), intToFixedpt(INPUT_A_RE4),
-			intToFixedpt(INPUT_B_VBEZ), intToFixedpt(INPUT_A_LZZFREIB),
-			intToFixedpt(INPUT_A_LZZHINZU), intToFixedpt(INPUT_B_AF),
-			intToFixedpt(INPUT_B_F));
+
+
+	MPARA();
+	MRE4JL();
 	VBEZBSO = intToFixedpt(0);
 	KENNVMT = intToFixedpt(0);
-	MRE4(intToFixedpt(INPUT_B_VJAHR), intToFixedpt(INPUT_B_VBEZ),
-			intToFixedpt(INPUT_A_LZZ), intToFixedpt(INPUT_B_VBEZM),
-			intToFixedpt(INPUT_B_ZMVB), intToFixedpt(INPUT_B_VBEZS),
-			intToFixedpt(INPUT_A_ALTER1), intToFixedpt(INPUT_A_AJAHR));
-	MRE4ABZ(intToFixedpt(INPUT_A_ENTSCH));
-	MBERECH(intToFixedpt(INPUT_A_STKL), intToFixedpt(INPUT_A_ZKF),
-			intToFixedpt(INPUT_A_KRV), intToFixedpt(INPUT_A_PKV),
-			intToFixedpt(INPUT_A_PKPV), intToFixedpt(INPUT_B_VMT),
-			intToFixedpt(INPUT_B_VKAPA), intToFixedpt(INPUT_A_F),
-			intToFixedpt(INPUT_B_LZZ), intToFixedpt(INPUT_A_ENTSCH),
-			intToFixedpt(INPUT_A_R));
-	MSONST(intToFixedpt(INPUT_A_LZZ), intToFixedpt(INPUT_B_ZMVB),
-			intToFixedpt(INPUT_B_SONSTB), intToFixedpt(INPUT_A_JRE4),
-			intToFixedpt(INPUT_A_JVBEZ), intToFixedpt(INPUT_B_VBS),
-			intToFixedpt(INPUT_B_STERBE), intToFixedpt(INPUT_B_F),
-			intToFixedpt(INPUT_B_R), intToFixedpt(INPUT_B_PKV),
-			intToFixedpt(INPUT_B_KRV), intToFixedpt(INPUT_B_STKL),
-			intToFixedpt(INPUT_B_PKPV), intToFixedpt(INPUT_B_VMT),
-			intToFixedpt(INPUT_B_VKAPA), intToFixedpt(INPUT_B_VJAHR),
-			intToFixedpt(INPUT_B_VBEZ), intToFixedpt(INPUT_B_VBEZM),
-			intToFixedpt(INPUT_B_VBEZS), intToFixedpt(INPUT_A_ALTER1),
-			intToFixedpt(INPUT_A_AJAHR), intToFixedpt(INPUT_A_ENTSCH),
-			intToFixedpt(INPUT_A_ZKF), intToFixedpt(INPUT_B_SONSTENT),
-			intToFixedpt(INPUT_B_JRE4ENT));
-	MVMT(intToFixedpt(INPUT_B_VKAPA), intToFixedpt(INPUT_B_VMT),
-			intToFixedpt(INPUT_B_STERBE), intToFixedpt(INPUT_B_SONSTB),
-			intToFixedpt(INPUT_B_VBS), intToFixedpt(INPUT_B_JRE4ENT),
-			intToFixedpt(INPUT_B_SONSTENT), intToFixedpt(INPUT_A_F),
-			intToFixedpt(INPUT_A_R), intToFixedpt(INPUT_B_VJAHR), intToFixedpt(INPUT_B_VBEZ),
-			intToFixedpt(INPUT_B_LZZ), intToFixedpt(INPUT_B_VBEZM), intToFixedpt(INPUT_B_VBEZS),
-			intToFixedpt(INPUT_A_ALTER1), intToFixedpt(INPUT_A_AJAHR), intToFixedpt(INPUT_A_ENTSCH),
-			intToFixedpt(INPUT_A_STKL), intToFixedpt(INPUT_A_ZKF), intToFixedpt(INPUT_A_KRV),
-			intToFixedpt(INPUT_A_PKV), intToFixedpt(INPUT_A_PKPV));
+	MRE4();
+	MRE4ABZ();
+	MBERECH();
+	MSONST();
+	MVMT();
 
 	int OUTPUT_BK = fixedptToInt(BK);
 	int OUTPUT_BKS = fixedptToInt(BKS);

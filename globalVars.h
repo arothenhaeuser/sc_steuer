@@ -10,6 +10,54 @@
 
 int J = 0;
 
+// INPUTS
+
+fixedpt RE4 = 0;
+fixedpt VBEZ = 0;
+fixedpt LZZFREIB = 0;
+fixedpt LZZHINZU = 0;
+fixedpt ENTSCH = 0;
+fixedpt STKL = 0;
+fixedpt ZKF = 0;
+fixedpt KRV = 0;
+fixedpt PKV = 0;
+fixedpt PKPV = 0;
+fixedpt F = 0;
+fixedpt R = 0;
+fixedpt VMT = 0;
+fixedpt VKAPA = 0;
+fixedpt LZZ = 0;
+fixedpt KRV = 0;
+fixedpt KVZ = 0;
+fixedpt PVS = 0;
+fixedpt PVZ = 0;
+fixedpt LZZ = 0;
+fixedpt AF = 0;
+fixedpt F = 0;
+fixedpt VJAHR = 0;
+fixedpt VBEZM = 0;
+fixedpt ZMVB = 0;
+fixedpt VBEZS = 0;
+fixedpt SONSTB = 0;
+fixedpt JRE4 = 0;
+fixedpt JVBEZ = 0;
+fixedpt VBS = 0;
+fixedpt STERBE = 0;
+fixedpt F = 0;
+fixedpt R = 0;
+fixedpt PKV = 0;
+fixedpt STKL = 0;
+fixedpt PKPV = 0;
+fixedpt ALTER1 = 0;
+fixedpt AJAHR = 0;
+fixedpt SONSTENT = 0;
+fixedpt JRE4ENT = 0;
+
+//
+
+
+
+
 fixedpt ALTE 	= 0;
 fixedpt ANP		= 0;
 fixedpt ANTEIL1 = 0;
