@@ -6,7 +6,7 @@
  */
 
 
-void MPARA(fixedpt KRV, fixedpt KVZ, fixedpt PVS, fixedpt PVZ) {
+void MPARA() {
 	if (KRV < intToFixedpt(2)) {
 		if (KRV == 0) {
 			BBGRV = intToFixedpt(76200);

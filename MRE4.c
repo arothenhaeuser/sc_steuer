@@ -8,7 +8,7 @@
 #include "fixedpt.h"
 #include "MRE4ALTE.h"
 
-void MRE4(fixedpt VJAHR, fixedpt VBEZ, fixedpt LZZ, fixedpt VBEZM, fixedpt ZMVB, fixedpt VBEZS, fixedpt ALTER1, fixedpt AJAHR) {
+void MRE4() {
 	MRE4_TMP1 = intToFixedpt(TAB2[J -1]);
 	MRE4_TMP2 = fixedpt_div(MRE4_TMP1, 201326592);
 	MRE4_TMP3 = fixedpt_div(VBEZB, 1677721600);
@@ -66,5 +66,5 @@ void MRE4(fixedpt VJAHR, fixedpt VBEZ, fixedpt LZZ, fixedpt VBEZM, fixedpt ZMVB,
 		FVBZ = HFVBZ; //Auf volle Euro aufrunden
 	}
 	}
-	MRE4ALTE(ALTER1, AJAHR);
+	MRE4ALTE();
 }

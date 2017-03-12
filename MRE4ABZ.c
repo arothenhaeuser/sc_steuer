@@ -7,7 +7,7 @@
 
 #include "fixedpt.h"
 
-void MRE4ABZ(fixedpt ENTSCH){
+void MRE4ABZ(){
 
 	ZRE4 = ZRE4J-FVB-ALTE-JLFREIB+JLHINZU;
 

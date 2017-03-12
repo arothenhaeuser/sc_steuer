@@ -6,8 +6,7 @@
  */
 
 
-void MRE4JL(fixedpt LZZ, fixedpt RE4, fixedpt VBEZ, fixedpt LZZFREIB, fixedpt LZZHINZU, fixedpt AF,
-		fixedpt F) {
+void MRE4JL() {
 	fixedpt factor2 = fixedpt_div(12, 100);
 	MRE4JL_TMP1 = fixedpt_div(360, 7);
 	fixedpt factor3 = fixedpt_div(MRE4JL_TMP1, 1677721600);

@@ -10,7 +10,7 @@
 #include "fixedpt.h"
 #include "tables.h"
 
-void MRE4ALTE(fixedpt ALTER1, fixedpt AJAHR) {
+void MRE4ALTE() {
 	if(ALTER1 == 0) {
 		ALTE = 0;
 	} else {

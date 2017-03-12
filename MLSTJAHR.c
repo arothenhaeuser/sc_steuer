@@ -8,13 +8,13 @@
 #include "UPEVP.c"
 #include "UPMLST.c"
 
-void MLSTJAHR(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV, fixedpt VMT, fixedpt VKAPA){
+void MLSTJAHR(){
 
-	UPEVP(KRV, STKL, PKV, PKPV);
+	UPEVP();
 
 	if (KENNVMT != 1677216) {
 		ZVE = ZRE4 - ZTABFB - VSP;
-		UPMLST(STKL);
+		UPMLST();
 	} else {
 		MLSTJAHR_TMP2 = fixedpt_div(VMT, 1677721600);
 		MLSTJAHR_TMP3 = fixedpt_div(VKAPA, 1677721600);
@@ -24,14 +24,14 @@ void MLSTJAHR(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV, fixedpt VMT,
 			MLSTJAHR_TMP5 = fixedpt_div(VKAPA, 1677721600);
 			MLSTJAHR_TMP1 = ZVE + MLSTJAHR_TMP4 + MLSTJAHR_TMP5;
 			ZVE = fixedpt_div(MLSTJAHR_TMP1, 83886080);
-			UPMLST(STKL);
+			UPMLST();
 			ST = fixedpt_mul(ST, 83886080);
 		} else {
-			UPMLST(STKL);
+			UPMLST();
 			STOVMT = ST;
 			MLSTJAHR_TMP6 = fixedpt_div((VMT+VKAPA), 8388608000);
 			ZVE = ZVE + MLSTJAHR_TMP6;
-			UPMLST(STKL);
+			UPMLST();
 			MLSTJAHR_TMP7 = fixedpt_mul((ST-STOVMT), 83886080);
 			ST = MLSTJAHR_TMP7 + STOVMT;
 		}

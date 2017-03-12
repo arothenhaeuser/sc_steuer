@@ -12,14 +12,13 @@
 #include "UPVKVLZZ.c"
 #include "MSOLZ.c"
 
-void MBERECH(fixedpt STKL, fixedpt ZKF, fixedpt KRV, fixedpt PKV, fixedpt PKPV,
-		fixedpt VMT, fixedpt VKAPA, fixedpt F, fixedpt LZZ, fixedpt ENTSCH, fixedpt R){
+void MBERECH(){
 
-	MZTABFB(STKL, ZKF);
+	MZTABFB();
 
 	VFRB = fixedpt_mul((ANP + FVB + FVBZ), 1677721600);
 
-	MLSTJAHR(KRV, STKL, PKV, PKPV, VMT, VKAPA);
+	MLSTJAHR();
 
 	WVFRB = fixedpt_mul((ZVE-GFB), 1677721600);
 
@@ -29,17 +28,17 @@ void MBERECH(fixedpt STKL, fixedpt ZKF, fixedpt KRV, fixedpt PKV, fixedpt PKPV,
 
 	LSTJAHR = fixedpt_mul(ST, F);
 
-	UPLSTLZZ(LZZ);
-	UPVKVLZZ(PKV, LZZ);
+	UPLSTLZZ();
+	UPVKVLZZ();
 
 	if (ZKF > 0) {
 		ZTABFB = ZTABFB + KFB;
-		MRE4ABZ(ENTSCH);
-		MLSTJAHR(KRV, STKL, PKV, PKPV, VMT, VKAPA);
+		MRE4ABZ();
+		MLSTJAHR();
 		JBMG = fixedpt_mul(ST, F);
 	} else {
 		JBMG = LSTJAHR;
 	}
 
-	MSOLZ(R, LZZ);
+	MSOLZ();
 }
