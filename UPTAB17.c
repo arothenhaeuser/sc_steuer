@@ -22,7 +22,7 @@ void UPTAB17 () {
 		ST = 0;
 	} else {
 		if (X < 231022264320) {
-			Y = fixedpt_div((X-GFB), 10000);
+			Y = fixedpt_div((X-GFB), 167772160000);
 			RW = fixedpt_mul(Y, UPTAB17_FAC1);
 			UPTAB17_TMP1 = intToFixedpt(1400);
 			RW = RW + UPTAB17_TMP1;
