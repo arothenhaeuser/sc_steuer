@@ -15,12 +15,12 @@ void MRE4ALTE(fixedpt ALTER1, fixedpt AJAHR) {
 		ALTE = 0;
 	} else {
 		if(AJAHR < 33655095296){
-			K = 16777216;
+			K = 1;
 		} else {
 			if(AJAHR < 34225520640){
-				K = AJAHR - 33621540864;
+				K = AJAHR - 2004;
 			} else {
-				K = 603979776;
+				K = 36;
 			}
 		}
 		BMG = ZRE4J -ZVBEZJ;
