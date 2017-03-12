@@ -71,7 +71,6 @@ void dowork(int INPUT_A_RE4, int INPUT_B_VBEZ, int INPUT_A_LZZFREIB,
     SONSTB = intToFixedpt(INPUT_B_SONSTB);
     VBS = intToFixedpt(INPUT_B_VBS);
     STERBE = intToFixedpt(INPUT_B_STERBE);
-    F = intToFixedpt(INPUT_B_F);
     ALTER1 = intToFixedpt(INPUT_A_ALTER1);
     AJAHR = intToFixedpt(INPUT_A_AJAHR);
     SONSTENT = intToFixedpt(INPUT_B_SONSTENT);
