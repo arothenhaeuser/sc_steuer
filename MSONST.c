@@ -48,7 +48,7 @@ void MSONST(fixedpt LZZ, fixedpt ZMVB, fixedpt SONSTB, fixedpt JRE4,
 			STS = 0;
 		}
 		MSONST_TMP1 = fixedpt_div(55, 100);
-		SOLZS = STS * MSONST_TMP1;
+		SOLZS = fixedpt_mul(STS, MSONST_TMP1);
 		if (R > 0) {
 			BKS = STS;
 		} else {
