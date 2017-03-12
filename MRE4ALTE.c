@@ -18,14 +18,14 @@ void MRE4ALTE() {
 			K = 1;
 		} else {
 			if(AJAHR < 34225520640){
-				K = AJAHR - 2004;
+				K = fixedptToInt(AJAHR - 33621540864);
 			} else {
 				K = 36;
 			}
 		}
 		BMG = ZRE4J -ZVBEZJ;
 		ALTE = fixedpt_mul(BMG, TAB4[K]);
-		HBALTE = TAB5[K];
+		HBALTE = intToFixedpt(TAB5[K]);
 		if(ALTE > HBALTE){
 			ALTE = HBALTE;
 		}
