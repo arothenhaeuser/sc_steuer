@@ -12,7 +12,7 @@
 void MSONST() {
 	LZZ = 16777216;
 	if (ZMVB == 0) {
-		ZMVB = 201326592;
+		ZMVB = 3072;
 	}
 	if (SONSTB == 0) {
 		VKVSONST = 0;
@@ -25,20 +25,20 @@ void MSONST() {
 		UPVKV();
 		VKVSONST = VKV;
 		ZRE4J = JRE4 + SONSTB;
-		ZRE4J = fixedpt_div(ZRE4J, 1677721600);
+		ZRE4J = fixedpt_div(ZRE4J, 25600);
 		SVBEZJ = JVBEZ + VBS;
-		SVBEZJ = fixedpt_div(SVBEZJ, 1677721600);
+		SVBEZJ = fixedpt_div(SVBEZJ, 25600);
 		VBEZBSO = STERBE;
 		MRE4SONST();
 		MLSTJAHR();
 		WVFRBM = ZVE - GFB;
-		WVFRBM = fixedpt_mul(WVFRBM, 1677721600);
+		WVFRBM = fixedpt_mul(WVFRBM, 25600);
 		if (WVFRBM < 0) {
 			WVFRBM = 0;
 		}
 		UPVKV();
 		VKVSONST = VKV - VKVSONST;
-		LSTSO = fixedpt_mul(ST, 1677721600);
+		LSTSO = fixedpt_mul(ST, 25600);
 		STS = LSTSO - LSTOSO;
 		STS = fixedpt_mul(STS, F);
 		if (STS < 0) {

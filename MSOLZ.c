@@ -8,8 +8,8 @@
 
 void MSOLZ () {
 
-	fixedpt factor = fixedpt_div(922746880, 16777216000);
-	fixedpt factor2 = fixedpt_div(33554432, 1677721600);
+	fixedpt factor = fixedpt_div(14080, 256000);
+	fixedpt factor2 = fixedpt_div(512, 25600);
 
 	SOLZFREI = fixedpt_mul(SOLZFREI, KZTAB);
 
@@ -21,7 +21,7 @@ void MSOLZ () {
 			SOLZJ = SOLZMIN;
 		}
 
-		JW = fixedpt_mul(SOLZJ, 1677721600);
+		JW = fixedpt_mul(SOLZJ, 25600);
 
 		UPANTEIL();
 		SOLZLZZ = ANTEIL1;
@@ -30,7 +30,7 @@ void MSOLZ () {
 	}
 
 	if (R > 0) {
-		JW = fixedpt_mul(JBMG, 1677721600);
+		JW = fixedpt_mul(JBMG, 25600);
 		UPANTEIL();
 		BK = ANTEIL1;
 	} else {
