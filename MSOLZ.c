@@ -6,7 +6,7 @@
  */
 
 
-void MSOLZ (fixedpt R, fixedpt LZZ) {
+void MSOLZ () {
 
 	fixedpt factor = fixedpt_div(922746880, 16777216000);
 	fixedpt factor2 = fixedpt_div(33554432, 1677721600);
@@ -23,7 +23,7 @@ void MSOLZ (fixedpt R, fixedpt LZZ) {
 
 		JW = fixedpt_mul(SOLZJ, 1677721600);
 
-		UPANTEIL(LZZ);
+		UPANTEIL();
 		SOLZLZZ = ANTEIL1;
 	} else {
 		SOLZLZZ = 0;
@@ -31,7 +31,7 @@ void MSOLZ (fixedpt R, fixedpt LZZ) {
 
 	if (R > 0) {
 		JW = fixedpt_mul(JBMG, 1677721600);
-		UPANTEIL(LZZ);
+		UPANTEIL();
 		BK = ANTEIL1;
 	} else {
 		BK = 0;

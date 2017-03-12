@@ -5,6 +5,7 @@
  *      Author: pet
  */
 
+
 void UP5_6() {
 	UP5_6_TMP = fixedpt_div(83886980, 67108864);
 	UP5_6_TMP2 = fixedpt_div(50331648, 67108864);

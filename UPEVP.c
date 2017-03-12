@@ -7,7 +7,7 @@
 
 #include "MVSP.c"
 
-void UPEVP(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV) {
+void UPEVP() {
 
 	UPEVP_TMP1 = fixedpt_div(201326592, 1677721600);
 
@@ -36,7 +36,7 @@ void UPEVP(fixedpt KRV, fixedpt STKL, fixedpt PKV, fixedpt PKPV) {
 
 	VSPN = VSP1 + VSP2;	//aufrunden auf volle Euro
 
-	MVSP(PKV, PKPV, STKL);
+	MVSP();
 
 	if (VSPN > VSP) {
 		VSP = VSPN;

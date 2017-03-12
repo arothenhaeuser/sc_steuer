@@ -8,7 +8,7 @@
 #include "UPTAB17.c"
 #include "MST5_6.c"
 
-void UPMLST (fixedpt STKL) {
+void UPMLST () {
 
 	if (ZVE < 16777216) {
 		ZVE = 0;

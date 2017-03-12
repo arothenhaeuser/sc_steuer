@@ -8,6 +8,6 @@
 #ifndef MZTABFB_H_
 #define MZTABFB_H_
 
-void MZTABFB(fixedpt STKL, fixedpt ZKF);
+void MZTABFB();
 
 #endif /* MZTABFB_H_ */

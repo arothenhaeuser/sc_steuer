@@ -6,7 +6,7 @@
  */
 
 
-void UPVKV (fixedpt PKV) {
+void UPVKV () {
 
 	if (PKV > 0) {
 		if (VSP2 > VSP3) {

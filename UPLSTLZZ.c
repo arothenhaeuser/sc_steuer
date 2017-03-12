@@ -7,9 +7,9 @@
 
 #include "UPANTEIL.c"
 
-void UPLSTLZZ (fixedpt LZZ) {
+void UPLSTLZZ () {
 
 	JW = fixedpt_mul(LSTJAHR, 1677721600);
-	UPANTEIL(LZZ);
+	UPANTEIL();
 	LSTLZZ = ANTEIL1;
 }

@@ -6,7 +6,7 @@
  */
 
 
-void UPANTEIL (fixedpt LZZ) {
+void UPANTEIL () {
 
 	UPANTEIL_TMP1 = fixedpt_div(7, 360);
 

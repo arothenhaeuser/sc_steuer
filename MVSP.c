@@ -6,7 +6,7 @@
  */
 
 
-void MVSP (fixedpt PKV, fixedpt PKPV, fixedpt STKL) {
+void MVSP () {
 
 	MVSP_TMP2 = fixedpt_div(201326592, 1677721600);
 	MVSP_TMP3 = KVSATZAG + PVSATZAG;

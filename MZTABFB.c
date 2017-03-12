@@ -8,7 +8,7 @@
 
 #include "fixedpt.h"
 
-void MZTABFB(fixedpt STKL, fixedpt ZKF){
+void MZTABFB(){
 
 	ANP = 0;
 

@@ -7,13 +7,13 @@
 
 #include "fixedpt.h"
 
-void MVMT(fixedpt VKAPA, fixedpt VMT, fixedpt STERBE, fixedpt SONSTB, fixedpt VBS, fixedpt JRE4ENT, fixedpt SONSTENT, fixedpt F, fixedpt R, fixedpt VJAHR, fixedpt VBEZ, fixedpt LZZ, fixedpt VBEZM, fixedpt VBEZS, fixedpt ALTER1, fixedpt AJAHR, fixedpt ENTSCH, fixedpt STKL, fixedpt ZKF, fixedpt KRV, fixedpt PKV, fixedpt PKPV) {
+void MVMT() {
 	if(VKAPA < 0) {
 		VKAPA = 0;
 	}
 	if((VMT + VKAPA) > 0) {
 		if(LSTSO == 0) {
-			MOSONST(VJAHR, VBEZ, LZZ, VBEZM, ZMVB, VBEZS, ALTER1, AJAHR, ENTSCH, STKL, ZKF,KRV, PKV, PKPV, VMT, VKAPA, JRE4ENT);
+			MOSONST();
 			LST1 = LSTOSO;
 		} else {
 			LST1 = LSTSO;
@@ -24,15 +24,15 @@ void MVMT(fixedpt VKAPA, fixedpt VMT, fixedpt STERBE, fixedpt SONSTB, fixedpt VB
 		MVMT_TMP2 = JVBEZ + VBS + VKAPA;
 		ZVBEZJ = fixedpt_div(MVMT_TMP2, 1677721600);
 		KENNVMT = 33554432;
-		MRE4SONST(SONSTENT, VJAHR, VBEZ, LZZ, VBEZM, ZMVB, VBEZS, ENTSCH, STKL, ZKF, ALTER1, AJAHR, JRE4ENT);
-		MLSTJAHR(KRV, STKL, PKV, PKPV, VMT, VKAPA);
+		MRE4SONST();
+		MLSTJAHR();
 		LST3 = fixedpt_mul(ST, 1677721600);
-		MRE4ABZ(ENTSCH);
+		MRE4ABZ();
 		MVMT_TMP3 = fixedpt_div(JRE4ENT, 1677721600);
 		MVMT_TMP4 = fixedpt_div(SONSTENT, 1677721600);
 		ZRE4VP = ZRE4VP - MVMT_TMP3 - MVMT_TMP4;
 		KENNVMT = 16777216;
-		MLSTJAHR(KRV, STKL, PKV, PKPV, VMT, VKAPA);
+		MLSTJAHR();
 		LST2 = fixedpt_mul(ST, 1677721600);
 		STV = LST2 - LST1;
 		LST3 = LST3 - LST1;

@@ -7,11 +7,11 @@
 
 #include "UPVKV.c"
 
-void UPVKVLZZ (fixedpt PKV, fixedpt LZZ) {
+void UPVKVLZZ () {
 
-	UPVKV(PKV);
+	UPVKV();
 	JW = VKV;
-	UPANTEIL(LZZ);
+	UPANTEIL();
 	VKVLZZ = ANTEIL1;
 
 }
