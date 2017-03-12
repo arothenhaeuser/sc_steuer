@@ -9,7 +9,8 @@
 void MRE4JL(fixedpt LZZ, fixedpt RE4, fixedpt VBEZ, fixedpt LZZFREIB, fixedpt LZZHINZU, fixedpt AF,
 		fixedpt F) {
 	fixedpt factor2 = fixedpt_div(12, 100);
-	fixedpt factor3 = fixedpt_div(fixedpt_div(360, 7), 1677721600);
+	MRE4JL_TMP1 = fixedpt_div(360, 7);
+	fixedpt factor3 = fixedpt_div(MRE4JL_TMP1, 1677721600);
 	fixedpt factorElse = fixedpt_div(360, 100);
 	if (LZZ == 16777216) {
 		ZRE4J = fixedpt_div(RE4, 1677721600);
@@ -21,7 +22,7 @@ void MRE4JL(fixedpt LZZ, fixedpt RE4, fixedpt VBEZ, fixedpt LZZFREIB, fixedpt LZ
 		ZVBEZJ = fixedpt_mul(VBEZ, factor2);
 		JLFREIB = fixedpt_mul(LZZFREIB, factor2);
 		JLHINZU = fixedpt_mul(LZZHINZU, factor2);
-	} else if (LZZ == 3) {
+	} else if (LZZ == 50331648) {
 		ZRE4J = fixedpt_mul(RE4, factor3);
 		ZVBEZJ = fixedpt_mul(VBEZ, factor3);
 		JLFREIB = fixedpt_mul(LZZFREIB, factor3);
@@ -33,6 +34,6 @@ void MRE4JL(fixedpt LZZ, fixedpt RE4, fixedpt VBEZ, fixedpt LZZFREIB, fixedpt LZ
 		JLHINZU = fixedpt_mul(LZZHINZU, factorElse);
 	}
 	if (AF == 0) {
-		F = 1;
+		F = 16777216;
 	}
 }
