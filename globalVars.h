@@ -17,7 +17,7 @@ fixedpt ANTEIL1 = 0;
 fixedpt BBGKVPV = 0;
 fixedpt BBGRV 	= 0;
 fixedpt BK		= 0;
-fixedpt BKS		= 0;
+fixedpt BKS		= 1;
 fixedpt BKV		= 0;
 fixedpt BMG		= 0;
 
@@ -62,6 +62,13 @@ fixedpt LSTOSO	 = 0;
 fixedpt LSTSO	 = 0;
 
 fixedpt MLSTJAHR_TMP1	= 0;
+fixedpt MLSTJAHR_TMP2	= 0;
+fixedpt MLSTJAHR_TMP3	= 0;
+fixedpt MLSTJAHR_TMP4	= 0;
+fixedpt MLSTJAHR_TMP5	= 0;
+fixedpt MLSTJAHR_TMP6	= 0;
+fixedpt MLSTJAHR_TMP7	= 0;
+fixedpt MLSTJAHR_TMP8	= 0;
 fixedpt MOSONST_TMP1	= 0;
 fixedpt MOSONST_TMP2	= 0;
 fixedpt MRE4_TMP1 = 0;
