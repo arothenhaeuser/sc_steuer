@@ -17,7 +17,7 @@ void MPARA() {
 		TBSVORV = fixedpt_div(68, 100);
 	}
 	BBGKVPV = intToFixedpt(52200);
-	MPARA_TMP1 =  fixedpt_div(KVZ, 1677721600);
+	MPARA_TMP1 =  fixedpt_div(KVZ, 25600);
 	MPARA_TMP2 = fixedpt_div(7, 100);
 	KVSATZAN = MPARA_TMP1 + MPARA_TMP2;
 	KVSATZAG = fixedpt_div(7, 100);

@@ -8,7 +8,7 @@
 
 void MVSP () {
 
-	MVSP_TMP2 = fixedpt_div(201326592, 1677721600);
+	MVSP_TMP2 = fixedpt_div(3072, 25600);
 	MVSP_TMP3 = KVSATZAG + PVSATZAG;
 	MVSP_TMP4 = KVSATZAN + PVSATZAN;
 
@@ -17,11 +17,11 @@ void MVSP () {
 	}
 
 	if (PKV > 0) {
-		if (STKL == 100663296) {
+		if (STKL == 1536) {
 			VSP3 = 0;
 		} else {
 			VSP3 = fixedpt_mul(PKPV, MVSP_TMP2);
-			if (PKV == 33554432) {
+			if (PKV == 512) {
 				MVSP_TMP1 = fixedpt_mul(ZRE4VP, MVSP_TMP3);
 				VSP3 = VSP3 - MVSP_TMP1;
 			}

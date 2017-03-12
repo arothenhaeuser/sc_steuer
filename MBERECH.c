@@ -16,11 +16,11 @@ void MBERECH(){
 
 	MZTABFB();
 
-	VFRB = fixedpt_mul((ANP + FVB + FVBZ), 1677721600);
+	VFRB = fixedpt_mul((ANP + FVB + FVBZ), 178187);
 
 	MLSTJAHR();
 
-	WVFRB = fixedpt_mul((ZVE-GFB), 1677721600);
+	WVFRB = fixedpt_mul((ZVE-GFB), 178187);
 
 	if (WVFRB < 0) {
 		WVFRB = 0;

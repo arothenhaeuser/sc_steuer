@@ -14,11 +14,11 @@ void MRE4ALTE() {
 	if(ALTER1 == 0) {
 		ALTE = 0;
 	} else {
-		if(AJAHR < 33655095296){
+		if(AJAHR < 513536){
 			K = 1;
 		} else {
-			if(AJAHR < 34225520640){
-				K = fixedptToInt(AJAHR - 33621540864);
+			if(AJAHR < 522240){
+				K = fixedptToInt(AJAHR - 513024);
 			} else {
 				K = 36;
 			}
