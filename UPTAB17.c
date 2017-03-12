@@ -8,35 +8,35 @@
 
 void UPTAB17 () {
 
-	UPTAB17_FAC1 = fixedpt_div(1682285002752, 16777216000);
-	UPTAB17_FAC2 = X - 231005487104;
-	UPTAB17_FAC3 = fixedpt_div(375406985216, 1677721600);
-	UPTAB17_FAC4 = fixedpt_div(1576336883712, 1677721600);
-	UPTAB17_FAC5 = fixedpt_div(704643072, 1677721600);
-	UPTAB17_FAC6 = fixedpt_div(14219428757504, 16777216000);
-	UPTAB17_FAC7 = fixedpt_div(754974720, 1677721600);
-	UPTAB17_FAC8 = fixedpt_div(27119581134848, 167772160000);
+	UPTAB17_FAC1 = fixedpt_div(25669632, 256000);
+	UPTAB17_FAC2 = X - 3524864;
+	UPTAB17_FAC3 = fixedpt_div(5728256, 25600);
+	UPTAB17_FAC4 = fixedpt_div(24052992, 25600);
+	UPTAB17_FAC5 = fixedpt_div(10752, 25600);
+	UPTAB17_FAC6 = fixedpt_div(216971264, 256000);
+	UPTAB17_FAC7 = fixedpt_div(11520, 25600);
+	UPTAB17_FAC8 = fixedpt_div(413811968, 2560000);
 
-	UPTAB17_TMP1 = GFB + 16777216;
+	UPTAB17_TMP1 = GFB + 256;
 	if (X < UPTAB17_TMP1) {
 		ST = 0;
 	} else {
 		if (X < 231022264320) {
-			Y = fixedpt_div((X-GFB), 167772160000);
+			Y = fixedpt_div((X-GFB), 2560000);
 			RW = fixedpt_mul(Y, UPTAB17_FAC1);
 			UPTAB17_TMP1 = intToFixedpt(1400);
 			RW = RW + UPTAB17_TMP1;
 			ST = fixedpt_mul(RW, Y);	//auf volle Euro aufrunden
 		} else {
-			if (X < 906942742528) {
-				Y = fixedpt_div(UPTAB17_FAC2, 167772160000);
+			if (X < 13838848) {
+				Y = fixedpt_div(UPTAB17_FAC2, 2560000);
 				RW = fixedpt_mul(Y, UPTAB17_FAC3);
 				UPTAB17_TMP3 = intToFixedpt(2397);
 				RW = RW + UPTAB17_TMP3;
 				RW = fixedpt_mul(RW, Y);
 				ST = RW + UPTAB17_FAC4;	//auf volle Euro aufrunden
 			} else {
-				if (X < 4300067569664) {
+				if (X < 65613824) {
 					UPTAB17_TMP4 = fixedpt_mul(X, UPTAB17_FAC5);
 					ST = UPTAB17_TMP4 - UPTAB17_FAC6;
 				} else {

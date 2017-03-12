@@ -9,9 +9,9 @@
 
 void UPEVP() {
 
-	UPEVP_TMP1 = fixedpt_div(201326592, 1677721600);
+	UPEVP_TMP1 = fixedpt_div(3072, 25600);
 
-	if (KRV > 16777216) {
+	if (KRV > 256) {
 		VSP1 = 0;
 	} else {
 		if (ZRE4VP > BBGRV) {
@@ -24,7 +24,7 @@ void UPEVP() {
 
 	VSP2 = fixedpt_mul(UPEVP_TMP1, ZRE4VP);
 
-	if (STKL == 50331648) {
+	if (STKL == 768) {
 		VHB = intToFixedpt(3000);
 	} else {
 		VHB = intToFixedpt(1900);

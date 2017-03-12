@@ -18,9 +18,9 @@ void MZTABFB(){
 		}
 	}
 
-	if (STKL < 100663296) {
+	if (STKL < 1536) {
 		if (ZVBEZ > 0) {
-			if (ZVBEZ-FVBZ < 1711276032) {
+			if (ZVBEZ-FVBZ < 26112) {
 				ANP = ZVBEZ - FVBZ;	// Auf volle Euro aufrunden
 			} else {
 				ANP = intToFixedpt(102);
@@ -31,38 +31,38 @@ void MZTABFB(){
 		FVBZSO = 0;
 	}
 
-	if (STKL < 100663296) {
+	if (STKL < 1536) {
 		if (ZRE4 > ZVBEZ) {
-			if (ZRE4-ZVBEZ < 16777216000) {
+			if (ZRE4-ZVBEZ < 256000) {
 				ANP = ANP + ZRE4 - ZVBEZ;	// Auf volle Euro aufrunden
 			} else {
-				ANP = ANP + 1677721600;
+				ANP = ANP + 25600;
 			}
 		}
 	}
 
-	KZTAB = 16777216;
+	KZTAB = 256;
 	switch (STKL) {
-	case 16777216:
-		SAP = 603979776;
-		KFB = fixedpt_mul(ZKF, 123413200896);
+	case 256:
+		SAP = 9216;
+		KFB = fixedpt_mul(ZKF, 1883136);
 		break;
-	case 33554432:
-		EFA = 32010928128;
-		SAP = 603979776;
-		KFB = fixedpt_mul(ZKF, 123413200896);
+	case 512:
+		EFA = 488448;
+		SAP = 9216;
+		KFB = fixedpt_mul(ZKF, 1883136);
 		break;
-	case 50331648:
-		KZTAB = 33554432;
-		SAP = 603979776;
-		KFB = fixedpt_mul(ZKF, 123413200896);
+	case 768:
+		KZTAB = 512;
+		SAP = 9216;
+		KFB = fixedpt_mul(ZKF, 1883136);
 		break;
-	case 67108864:
-		SAP = 603979776;
-		KFB = fixedpt_mul(ZKF, 123413200896);
+	case 1024:
+		SAP = 9216;
+		KFB = fixedpt_mul(ZKF, 1883136);
 		break;
-	case 83886080:
-		SAP = 603979776;
+	case 1280:
+		SAP = 9216;
 		KFB = 0;
 		break;
 	default:

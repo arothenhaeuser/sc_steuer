@@ -10,9 +10,9 @@ void UPVKV () {
 
 	if (PKV > 0) {
 		if (VSP2 > VSP3) {
-			VKV = fixedpt_mul(VSP2, 1677721600);
+			VKV = fixedpt_mul(VSP2, 25600);
 		} else {
-			VKV = fixedpt_mul(VSP3, 1677721600);
+			VKV = fixedpt_mul(VSP3, 25600);
 		}
 	} else {
 		VKV = 0;
